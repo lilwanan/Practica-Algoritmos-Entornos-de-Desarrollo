@@ -14,14 +14,28 @@ public abstract class Algoritmos {
         this.entero = entero;
     }
 	
-	public static void fibonacci(int numero) {
-		int primerNumero=0;
-		int numActual=1;
+	public static int fibonacci(int numero) {
+		if(numero==0) {
+			return 0;
+			
+		} else if(numero==1) {
+			return 1;
+		} else {
+			return fibonacci(numero-1) + fibonacci(numero-2);
+		}
 		
-		while(primerNumero<=numero) {
-			int suma= primerNumero+numActual;
-			primerNumero=numActual;
-			numActual=suma;
+		
+	}
+	
+	public static int factorial(int numero) {
+		if (numero==0||numero==1) {
+			return 1;
+		} else {
+			int factorial = 1;
+			for(int i = 2 ; i <= numero ; i++) {
+				factorial=factorial*i;
+			}
+			return factorial;
 		}
 	}
 	
