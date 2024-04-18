@@ -15,8 +15,8 @@ public class Principal {
 		for (int i = 0;i<array.length;i++) {
 			Algoritmos.fibonacci(i);
 			Algoritmos.factorial(i);
+			Algoritmos.esPrimo(i);
 		}
-		
 
 	}
 
